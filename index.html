@@ -10,31 +10,35 @@
      display: flex;
      flex-wrap: wrap;
   }
-  .aside, .main {
+  .left, .right {
      width: 100%;
      min-height: 1px;
   }
   @media (min-width: 992px) {
-   .aside {
-     flex: 0 0 33.333333%;
-     max-width: 33.333333%;
+   .left {
+     flex: 0 0 50%;
+     max-width: 50%;
      order: 1;
    }
-   .main {
-     flex: 0 0 66.666667%;
-     max-width: 66.666667%;
+   .right {
+     flex: 0 0 50%;
+     max-width: 50%;
      order: 2;
    }
   }
   </style>
 
   <div class="container">
-     <main class="main">
-       MAIN
-     </main>
-     <aside class="aside">
-       ASIDE
+     <aside class="left">
+        <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form> 
      </aside>
+     <main class="right">
+     </main>
   </div>
 </body>
 </html>
