@@ -1,6 +1,42 @@
-<!DOCTYPE html>
+<html>
 <head>
 </head>
 <body>
-<img src="https://wallpaper.forfun.com/fetch/9d/9db454fa37a532fced4131df183b80b2.jpeg"/>
+<style>
+  body {
+     margin: 0;
+  }
+  .container {
+     display: flex;
+     flex-wrap: wrap;
+  }
+  .aside, .main {
+     width: 100%;
+     min-height: 1px;
+  }
+  @media (min-width: 992px) {
+   .aside {
+     flex: 0 0 33.333333%;
+     max-width: 33.333333%;
+     order: 1;
+   }
+   .main {
+     flex: 0 0 66.666667%;
+     max-width: 66.666667%;
+     order: 2;
+   }
+  }
+  }
+
+  </style>
+
+  <div class="container">
+     <main class="main">
+       MAIN
+     </main>
+     <aside class="aside">
+       ASIDE
+     </aside>
+  </div>
 </body>
+</html>
